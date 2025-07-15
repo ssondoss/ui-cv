@@ -1,204 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .container {
-            padding: 50px;
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      .container {
+        padding: 50px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-        .text {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+      .text {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
 
-        .text::after {
-            content: '';
-            transition: transform 0.3s ease-out;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
+      .text::after {
+        content: "";
+        transition: transform 0.3s ease-out;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
 
-            width: 100%;
-            height: 3px;
-            background-color: red;
-        }
+        width: 100%;
+        height: 3px;
+        background-color: red;
+      }
 
-        .text:hover::after {
-            transform: translateX(-50%) scaleX(1);
-        }
+      .text:hover::after {
+        transform: translateX(-50%) scaleX(1);
+      }
 
-        .border {
-            border: 1px solid #bbbbbb;
-        }
+      .border {
+        border: 1px solid #bbbbbb;
+      }
 
-        .p-20 {
-            padding: 20px;
-        }
+      .p-20 {
+        padding: 20px;
+      }
 
-        .rounded {
-            border-radius: 10px;
-        }
+      .rounded {
+        border-radius: 10px;
+      }
 
-        .p-0 {
-            padding: 0px;
-            margin: 0;
-        }
+      .p-0 {
+        padding: 0px;
+        margin: 0;
+      }
 
-        .pt-5 {
-            padding-top: 5px;
-        }
+      .pt-5 {
+        padding-top: 5px;
+      }
 
-        .mt-5 {
-            margin-top: 5px;
-        }
+      .mt-5 {
+        margin-top: 5px;
+      }
 
-        .d-flex {
-            display: flex;
-        }
+      .mt-20 {
+        margin-top: 20px;
+      }
 
-        .d-col {
-            display: block;
-        }
+      .d-flex {
+        display: flex;
+      }
 
-        .intro {
-            padding-left: 30px;
-            width: 100%;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+      .d-col {
+        display: block;
+      }
 
-        .qr-code {}
+      .intro {
+        padding-left: 30px;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
 
-        .col-6 {
-            width: 50%;
-        }
+      .qr-code {
+      }
 
-        .bg-light {
-            background-color: #bbbbbb;
-        }
+      .col-6 {
+        width: 50%;
+      }
 
-        .contact-info {
-            background-color: #e9e7e7af;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 30px;
-        }
+      .bg-light {
+        background-color: #bbbbbb;
+      }
 
-        .mx-auto {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+      .contact-info {
+        background-color: #e9e7e7af;
+        border-radius: 20px;
+        padding: 20px;
+      }
 
-        .m-auto {
-            margin: auto;
-        }
+      .mx-auto {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
 
-        .pl-5 {
-            padding-left: 5px;
-        }
+      .m-auto {
+        margin: auto;
+      }
 
-        .mt-10 {
-            margin-top: 10px;
-        }
+      .pl-5 {
+        padding-left: 5px;
+      }
 
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            color: #444444;
-        }
+      .mt-10 {
+        margin-top: 10px;
+      }
 
-        .header {
-            font-size: 25px;
-            font-weight: bold;
-            margin-top: 25px;
-            margin-bottom: 25px;
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #444444;
+      }
 
-        }
+      .header {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
 
-        .subtitle {
-            font-size: 18px;
-            font-weight: 600;
-            color: #666666;
-        }
+      .subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: #666666;
+      }
 
-        .work-exp {
-            margin-top: 35px;
-        }
-        .desc{
-            padding-top: 10px;
-        }
+      .work-exp {
+        margin-top: 35px;
+      }
+      .pt-20{
+        padding-top: 20px;
+      }
+
+      .desc {
+        padding-top: 10px;
+        color: #646464;
+        font-style: italic;
+      }
+
+      .section {
+        margin-top: 35px;
+      }
+
+      .skill {
+        background-color: #e6e3e3;
+        border-radius: 12px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .justify-between {
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+      }
+
+      .justify-start {
+        justify-content: flex-start;
+      }
+
+      .my-auto {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      .pt-10 {
+        padding-top: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="border p-20 rounded d-flex">
-            <div class="">
-                <img src="./photo.jpeg" alt="">
-            </div>
-            <div class="intro">
-                <h2 class="p-0">Sondos Marashdeh</h3>
-                    <h5 class="mt-5">Senior Software Engineer
-                    </h5>
-                    <p>With nearly 4 years of hands-on experience primarily in Angular, Spring Boot, JavaScript and
-                        Java.
-                        <br> I am a dedicated Software Engineer with a strong passion for coding and
-                        technology.
-                        <br> My career is driven by a relentless curiosity and a commitment to mastering
-                        existing technologies while contributing to innovative solutions.
-                        I have a proven track record
-                        of developing robust, scalable applications and thrive in dynamic, collaborative environments.
-                    </p>
-            </div>
-
-
+      <div class="border p-20 rounded d-flex">
+        <div class="">
+          <img src="./photo.jpeg" alt="" />
         </div>
-
-        <div class="d-flex contact-info ">
-            <div class="col-6">
-                <div class="d-flex"><img src="./email-svgrepo-com.svg" alt="" height="25" width="25">
-                    <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
-                </div>
-                <div class="d-flex mt-10"><img src="./email-svgrepo-com.svg" alt="" height="25" width="25">
-                    <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
-                </div>
-                <div class="d-flex mt-10"><img src="./email-svgrepo-com.svg" alt="" height="25" width="25">
-                    <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
-                </div>
-
-            </div>
-            <div class="col-6">
-                <div class="d-flex"><img src="./email-svgrepo-com.svg" alt="" height="25" width="25">
-                    <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
-                </div>
-                <div class="d-flex mt-10"><img src="./email-svgrepo-com.svg" alt="" height="25" width="25">
-                    <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
-                </div>
-                <div class="d-flex mt-10"><img src="./email-svgrepo-com.svg" alt="" height="25" width="25">
-                    <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
-                </div>
-            </div>
+        <div class="intro">
+          <h2 class="p-0">Sondos Marashdeh</h2>
+          <h5 class="mt-5">Senior Software Engineer</h5>
+          <p>
+            With nearly 4 years of hands-on experience primarily in Angular,
+            Spring Boot, JavaScript and Java. <br />
+            I am a dedicated Software Engineer with a strong passion for coding
+            and technology. <br />
+            My career is driven by a relentless curiosity and a commitment to
+            mastering existing technologies while contributing to innovative
+            solutions. I have a proven track record of developing robust,
+            scalable applications and thrive in dynamic, collaborative
+            environments.
+          </p>
         </div>
+      </div>
 
-        <div class="work-exp">
-            <div class="header"> Work Experience
-            </div>
-            <div class="title ">Software Engineer (Angular + SpringBoot)</div>
-            <div class="subtitle ">Bitoasis</div>
-            <div class="d-flex">            <div class="desc col-6">09/2024 - Present</div>
+      <div class="d-flex contact-info section">
+        <div class="col-6">
+          <div class="d-flex">
+            <img src="./email-svgrepo-com.svg" alt="" height="25" width="25" />
+            <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
+          </div>
+          <div class="d-flex mt-10">
+            <img src="./email-svgrepo-com.svg" alt="" height="25" width="25" />
+            <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
+          </div>
+          <div class="d-flex mt-10">
+            <img src="./email-svgrepo-com.svg" alt="" height="25" width="25" />
+            <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
+          </div>
         </div>
+        <div class="col-6">
+          <div class="d-flex">
+            <img src="./email-svgrepo-com.svg" alt="" height="25" width="25" />
+            <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
+          </div>
+          <div class="d-flex mt-10">
+            <img src="./email-svgrepo-com.svg" alt="" height="25" width="25" />
+            <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
+          </div>
+          <div class="d-flex mt-10">
+            <img src="./email-svgrepo-com.svg" alt="" height="25" width="25" />
+            <div class="mx-auto pl-5">sondosmarashdeh360@gmail.com</div>
+          </div>
         </div>
+      </div>
+      <div class="section">
+        <div class="header">Skills</div>
+        <div class="d-flex justify-between">
+          <div class="subtitle my-auto pt-10">Frontend:</div>
+          <div class="skill">Angular (Advanced)</div>
+          <div class="skill">TypeScript / JavaScript (ES6+)</div>
+          <div class="skill">NgRx (State Management)</div>
+          <div class="skill">RxJS</div>
+          <div class="skill">HTML5 / CSS / SCSS / Bootstrap</div>
+          <div class="skill">Web Accessibility (WCAG)</div>
+          <div class="skill">Scully (Static Site Generation)</div>
+
+          <div class="skill">SEO & Sitemap Optimization</div>
+          <div class="skill">Dynamic Component Architecture</div>
+          <div class="skill">Cross-browser Compatibility</div>
+        </div>
+        <div class="d-flex justify-between mt-20">
+          <div class="subtitle my-auto pt-10">Backend:</div>
+          <div class="skill">Java 8+</div>
+          <div class="skill">Spring Boot</div>
+          <div class="skill">Spring Batch</div>
+          <div class="skill">Spring Data JPA / Hibernate</div>
+
+          <div class="skill">Spring Scheduler</div>
+          <div class="skill">RESTful APIs</div>
+          <div class="skill">GraphQl</div>
+          <div class="skill">Security (JWT, RSA, SHA256)</div>
+          <div class="skill">SQL (MySQL)</div>
+
+          <div class="skill">Maven/Gradle</div>
+        </div>
+        <div class="d-flex justify-between mt-20">
+          <div class="subtitle my-auto pt-10">Dev Tools:</div>
+
+          <div class="skill">Git / GitHub</div>
+
+          <div class="skill">Bash (for scripting/deployment)</div>
+          <div class="skill">Unit & Integration Testing</div>
+          <div class="skill">Open Source Contributor</div>
+        </div>
+        <div class="d-flex justify-between mt-20">
+          <div class="subtitle my-auto pt-10">Software Engineering:</div>
+
+          <div class="skill">problem solving</div>
+          <div class="skill">OOP/Functional Programming</div>
+          <div class="skill">Algorithms</div>
+          <div class="skill">Design Patterns</div>
+
+          <div class="skill">Code Modularity & Reusability</div>
+
+          <div class="skill">System Design</div>
+          <div class="skill">Agile / Scrum Methodology</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="header">Work Experience</div>
+        <div class="title">Software Engineer (Angular + SpringBoot)</div>
+        <div class="subtitle">Bitoasis</div>
+        <div class="d-flex">
+          <div class="desc col-6">09/2024 - Present</div>
+          <div class="desc col-6">Amman - Jordan</div>
+        </div>
+        <div class="desc">
+         
+            Cryptocurrency exchange platform for BitCoin and +60
+            cryptocurrencies.
+        </div>
+        <div class="subtitle pt-20">Achievements/Tasks</div>
+        <ul>
+          <li>
+            Skilled in designing and implementing highly reusable Web
+            Components, Proficient in using advanced component architectures to
+            ensure code reusability and modularity using Angular.
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
