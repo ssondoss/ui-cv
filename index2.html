@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* general styling */
+      .container {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        padding: 0;
+      }
+
+      .border {
+        border: 1px solid #bbbbbb;
+      }
+
+      .p-20 {
+        padding: 20px;
+      }
+
+      .rounded {
+        border-radius: 10px;
+      }
+
+      .p-0 {
+        padding: 0px;
+        margin: 0;
+      }
+
+      .pt-5 {
+        padding-top: 5px;
+      }
+
+      .mt-5 {
+        margin-top: 5px;
+      }
+
+      .mt-20 {
+        margin-top: 20px;
+      }
+
+      .d-flex {
+        display: table;
+        /* width: 100%; */
+        table-layout: fixed;
+      }
+      .d-flex > * {
+        display: table-cell;
+        vertical-align: top;
+      }
+      .d-col {
+        display: block;
+      }
+
+      .col-6 {
+        width: 50%;
+        display: table-cell;
+      }
+
+      .bg-light {
+        background-color: #bbbbbb;
+      }
+
+      .mx-auto {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      .m-auto {
+        margin: auto;
+      }
+
+      .pl-5 {
+        padding-left: 5px;
+      }
+
+      .mt-10 {
+        margin-top: 10px;
+      }
+
+      .title {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      .w-100 {
+        width: 100%;
+      }
+
+      .header {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .pt-20 {
+        padding-top: 20px;
+      }
+
+      .desc {
+        padding-top: 10px;
+        color: #444444;
+      }
+
+      .text-light {
+        color: #646464;
+      }
+
+      .my-auto {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      .pt-10 {
+        padding-top: 10px;
+      }
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      .col-4 {
+        width: 33.33%;
+      }
+
+      .pl-10 {
+        padding-left: 10px;
+      }
+
+      section {
+        margin-top: 60px;
+      }
+
+      section:first-child {
+        margin-top: 0;
+      }
+
+      a {
+        color: #000000;
+        font-size: 13px;
+        text-decoration: none !important;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .f-xs {
+        font-size: 11px;
+      }
+      .f-s {
+        font-size: 12px;
+      }
+
+      /*intro style */
+      .intro {
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      .contact-info {
+        background-color: #e9e7e7;
+        border-radius: 20px;
+        padding: 20px;
+      }
+      .contact-info > .col-6 {
+        width: 50%;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+      .qr-code {
+        padding-right: 15px;
+        padding-top: 10px;
+      }
+
+      /*skills style*/
+      .skill {
+        background-color: #e6e3e3;
+        border-radius: 12px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      /*work experience style */
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--intro-->
+      <section>
+        <div class="border p-20 rounded">
+          <h2 class="p-0">Nawar Marashdeh</h2>
+          <div class="title">GP Dentist</div>
+          <div class="d-flex pt-10">
+            <div class="qr-code" style="width: 18%">
+              <img
+                src="./nawar.jpg"
+                alt=""
+                width="150px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="intro">
+              Dentistry graduate from <strong>JUST University</strong>, with
+              hands-on clinical training in root canal treatment, restorative
+              dentistry, scaling, prosthodontics (crowns and bridges), and
+              pediatric dentistry. <br />Skilled in patient care, with strong
+              communication abilities and experience in managing and treating
+              children. <br />
+              Motivated and detail-oriented, with a commitment to continuous
+              learning and professional development in diagnosis and treatment
+              planning.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--contact info-->
+
+      <div class="mt-20 d-flex contact-info">
+        <div class="col-6">
+          <div class="d-flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+              width="20"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+              />
+            </svg>
+
+            <div class="mx-auto pl-5">nawarmarashdeh722@gmail.com</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+              width="20"
+            >
+              <path
+                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+              />
+            </svg>
+            <div class="mx-auto pl-5">
+              lhttps://www.linkedin.com/in/nawar-marashdeh-678a42333/
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--skills-->
+      <section>
+        <h2 class="header">Skills</h2>
+        <h3 class="title">Clinical Skills</h3>
+
+        <p>
+          Oral Examination and diagnosis, Endodontics (root canal treatment),
+          Restorations (composite, GIC, amalgam fillings), Scaling and
+          prophylaxis, Prosthodontics (crowns and bridges), Pediatric dentistry
+          (managing and treating children), Teeth whitening, Simple extractions
+          and suturing, 3Shape software (digital dentistry), Dental photography
+          and image editing
+        </p>
+
+        <h3 class="title">Professional Skills</h3>
+
+        <p>
+          Excellent patient communication, Detail-oriented and motivated,
+          Teamwork and adaptability, Ethical manners
+        </p>
+      </section>
+
+      <!--Work Experience-->
+      <section>
+        <h2 class="header">Work Experience</h2>
+
+        <h3 class="title">Dental Internship</h3>
+        <div class="subtitle">Ibn Sina Dental Center</div>
+        <div class="d-flex w-100">
+          <div class="desc col-6">02/2025 - 08/2025</div>
+          <div class="desc col-6">Irbid - Jordan</div>
+        </div>
+
+        <div class="pt-20"><strong>Key Achievements:</strong></div>
+        <ul>
+          <li>Performed general dental procedures and patient care.</li>
+          <li>Executed preventive and restorative treatments .</li>
+          <li>
+            Managed pediatric patients: preventive care, fillings, and
+            extractions.
+          </li>
+          <li>Carried out pulp therapy and dental emergency management.</li>
+          <li>Provided chairside support and prepared dental instruments.</li>
+        </ul>
+
+        <br />
+
+        <h3 class="title">Internship - Emergency Department</h3>
+        <div class="subtitle">Princess Basma Hospital</div>
+        <div class="d-flex w-100">
+          <div class="desc col-6">12/2024 - 02/2025</div>
+          <div class="desc col-6">Irbid - Jordan</div>
+        </div>
+
+        <div class="pt-20"><strong>Key Achievements:</strong></div>
+        <ul>
+          <li>Assisted in managing general emergency and trauma cases .</li>
+          <li>Performed skin suturing and wound dressing.</li>
+          <li>Observed preparation procedures for emergency interventions.</li>
+          <li>Monitored patient's vital signs.</li>
+          <li>Provided hands-on support during urgent care situations.</li>
+        </ul>
+
+        <br />
+
+        <h3 class="title">Dental Internship</h3>
+        <div class="subtitle">Princess Basma Hospital</div>
+        <div class="d-flex w-100">
+          <div class="desc col-6">08/2024 - 12/2024</div>
+          <div class="desc col-6">Irbid - Jordan</div>
+        </div>
+
+        <div class="pt-20"><strong>Key Achievements:</strong></div>
+        <ul>
+          <li>
+            Rotated through all dental specialty clinics: Surgery, Periodontics,
+            Endodontics, Orthodontics, and Oral Medicine.
+          </li>
+          <li>Performed general dental procedures and patient care.</li>
+          <li>Provided chairside support and prepared dental instruments.</li>
+        </ul>
+      </section>
+
+      <!--Education-->
+      <section>
+        <h2 class="header">Education</h2>
+        <div>
+          <b>Bachelor of Dental Surgery (BDS)</b> - Jordan University of Science
+          and Technology
+        </div>
+        <div>2019 - 2025</div>
+        <div>V.good</div>
+
+        <div class="pt-20">
+          <b>Medication Administration Course</b> - Princess Raya Hospital,
+          Human Resources Development Unit
+        </div>
+        <div>Feb, 2022</div>
+
+        <div class="pt-20"><b>Tawjihi</b></div>
+        <div>2018 - 2019</div>
+        <div>99.1</div>
+      </section>
+      <!--Languages-->
+      <section>
+        <h2 class="header">Languages</h2>
+
+        <strong>Arabic</strong>: Native or Bilingual Proficiency
+        <p><strong>English</strong>: Full Professional Proficiency</p>
+      </section>
+    </div>
+  </body>
+</html>
