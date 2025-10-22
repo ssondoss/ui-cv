@@ -7,7 +7,7 @@
     <style>
       /* general styling */
       .container {
-        font-size: 14px;
+        font-size: 13px;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 20px;
         padding: 0;
@@ -20,7 +20,9 @@
       .p-20 {
         padding: 20px;
       }
-
+      ul {
+        margin-top: 0px !important;
+      }
       .rounded {
         border-radius: 10px;
       }
@@ -72,17 +74,21 @@
       .m-auto {
         margin: auto;
       }
-
+      .bold {
+        font-weight: bold;
+      }
       .pl-5 {
         padding-left: 5px;
       }
-
+      .pl-80 {
+        padding-left: 80px;
+      }
       .mt-10 {
         margin-top: 10px;
       }
 
       .title {
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 10px;
       }
 
@@ -91,12 +97,12 @@
       }
 
       .header {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
       }
 
       .subtitle {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
       }
 
@@ -105,7 +111,7 @@
       }
 
       .desc {
-        padding-top: 10px;
+        padding-top: 5px;
         color: #444444;
       }
 
@@ -123,7 +129,7 @@
       }
 
       li {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
       }
 
       .col-4 {
@@ -135,7 +141,7 @@
       }
 
       section {
-        margin-top: 60px;
+        margin-top: 25px;
       }
 
       section:first-child {
@@ -1680,8 +1686,7 @@ z"
         </div>
       </section>
       <!--contact info-->
-
-      <div class="mt-20 d-flex contact-info">
+      <div class="mt-10 d-flex contact-info" style="font-size: 15px">
         <div class="col-6">
           <div class="d-flex">
             <svg
@@ -1777,42 +1782,44 @@ z"
           </div>
         </div>
       </div>
+
       <!--skills-->
       <section>
-        <h2 class="header">Skills</h2>
-
-        <h3 class="title">Frontend</h3>
+        <div class="header">Skills</div>
         <p>
-          Angular (Advanced), TypeScript, JavaScript (ES6+), NgRx, RxJS, HTML5,
-          CSS3, SCSS, Bootstrap, WCAG, Scully, SEO, Dynamic Components,
-          Cross-browser Compatibility
+          <span class="subtitle">Frontend:</span> Angular (Advanced),
+          TypeScript, JavaScript (ES6+), NgRx, RxJS, HTML5, CSS3, SCSS,
+          Bootstrap, WCAG, Scully, SEO, Dynamic Components, Cross-browser
+          Compatibility.
         </p>
-
-        <h3 class="title">Backend</h3>
         <p>
+          <span class="subtitle">Backend:</span>
           Java 8+, Spring Boot, Spring Batch, Spring Data JPA/Hibernate, Spring
           Scheduler, RESTful APIs, GraphQL, Security (JWT, RSA, SHA256), SQL
-          (MySQL), Maven, Gradle
+          (MySQL), Maven, Gradle.
         </p>
 
-        <h3 class="title">Dev Tools</h3>
         <p>
+          <span class="subtitle">Dev Tools:</span>
+
           Git, GitHub, Bash, Unit &amp; Integration Testing, Open Source
-          Contributor
+          Contributor.
         </p>
-
-        <h3 class="title">Software Engineering</h3>
         <p>
+          <span class="subtitle">Software Engineering:</span>
+
           Problem Solving, OOP/Functional Programming, Algorithms, Design
-          Patterns, Code Modularity, System Design, Agile/Scrum
+          Patterns, Code Modularity, System Design, Agile/Scrum.
         </p>
       </section>
 
       <!--Work Experience-->
       <section>
-        <h2 class="header">Work Experience</h2>
+        <div class="header">Work Experience</div>
 
-        <h3 class="title">Software Engineer (Angular + SpringBoot)</h3>
+        <div class="title bold pt-10">
+          Software Engineer (Angular + SpringBoot)
+        </div>
 
         <div class="subtitle">Bitoasis</div>
         <div class="d-flex w-100">
@@ -1822,40 +1829,21 @@ z"
         <div class="desc">
           Cryptocurrency exchange platform for BitCoin and +60 cryptocurrencies.
         </div>
-        <div class="pt-20"><strong>Key Achievements:</strong></div>
+        <div class="pt-10"><strong>Key Achievements:</strong></div>
         <ul>
           <li>
-            Skilled in designing and implementing highly reusable Web
-            Components. Proficient in using advanced component architectures to
-            ensure code reusability and modularity using Angular.
+            Proficient in using advanced component architectures to ensure code
+            reusability and modularity.
           </li>
-          <li>
-            Collaborated with UI/UX teams to translate visual and interaction
-            designs into functional user interfaces while maintaining high
-            performance and scalability.
-          </li>
-          <li>
-            Developed and maintained APIs using GraphQL, enabling flexible data
-            fetching and minimizing over - fetching issues in client
-            applications.
-          </li>
-          <li>
-            Employed caching mechanisms and optimized SQL queries to enhance
-            application performance and reduce load times.
-          </li>
-          <li>
-            Developed and integrated APIs for third-party services, enhancing
-            the platform's capabilities and user interconnectivity
-          </li>
-          <li>
-            Led the shift to a mobile-first design approach, significantly
-            improving user experience and engagement on mobile devices
-          </li>
+
+          <li>Developed and maintained APIs using GraphQL.</li>
+          <li>Employed caching mechanisms and optimized SQL queries.</li>
+          <li>Developed and integrated APIs for third-party services.</li>
         </ul>
 
-        <br />
-
-        <h3 class="title">Software Engineer (SpringBoot)</h3>
+        <div class="title bold pt-10">
+          Software Engineer (SpringBoot) 
+        </div>
         <div class="subtitle">Eskadenia</div>
         <div class="d-flex w-100">
           <div class="desc col-6">03/2024 - 09/2024</div>
@@ -1866,107 +1854,98 @@ z"
           Telecommunications, Insurance, Enterprise, Education, Healthcare and
           Internet.
         </div>
-        <div class="pt-20"><strong>Key Achievements:</strong></div>
+        <div class="pt-10"><strong>Key Achievements:</strong></div>
         <ul>
+          <li>Designed and developed RESTful APIS.</li>
           <li>
-            Designed and developed RESTful APIS facilitating effective data
-            exchange between the frontend interfaces and backend services.
+            Engineered a scheduling system to automate and manage data retrieval
+            tasks from external APIs.
           </li>
-          <li>
-            Engineered a scheduling system utilizing Spring Scheduler and Spring
-            Batch to automate and manage data retrieval tasks from external
-            APIs.
-          </li>
-          <li>
+          <!-- <li>
             Implemented Spring Boot's security and data access frameworks to
             ensure application integrity and efficient data management.
-          </li>
+          </li> -->
           <li>
             Collaborated closely with JPA and Hibernate to design and implement
             code-first databases.
           </li>
         </ul>
 
-        <br />
-
-        <h3 class="title">Software Engineer (Angular)</h3>
+        <div class="title bold pt-10">
+          Software Engineer (Angular)
+        </div>
         <div class="subtitle">Eskadenia</div>
         <div class="d-flex w-100">
           <div class="desc col-6">12/2021 - 03/2024</div>
           <div class="desc col-6">Amman - Jordan</div>
         </div>
-        <div class="desc">
+        <!-- <div class="desc">
           Software development company provides software in the fields of
           Telecommunications, Insurance, Enterprise, Education, Healthcare and
           Internet.
-        </div>
-        <div class="pt-20"><strong>Key Achievements:</strong></div>
+        </div> -->
+        <div class="pt-10"><strong>Key Achievements:</strong></div>
         <ul>
           <li>
             Constructing a security layer that facilitates End-to-End encryption
-            and decryption, coupled with the signing of HTTP requests. This
-            layer employs the RSA and ESA algorithms for encryption and the
-            SHA256 algorithm for signature hashing. It's characterized by the
-            use of dual public and private keys, along with a unique
-            authentication identifier for every user.
+            and decryption, coupled with the signing of HTTP requests.
           </li>
           <li>
             Enhanced the flexibility and modularity of a large-scale CMS
-            application by effectively using Angular's dynamic components,
-            enabling on-the-fly content management and customization.
+            application by using dynamic components, enabling on-the-fly content
+            customization.
           </li>
           <li>
             Designed and implemented robust state management solutions, Using
-            NgRx Store to manage the state of the application in a single,
-            predictable state container, enabling easier debugging and state
-            monitoring.
+            NgRx Store.
           </li>
-          <li>
-            Authored and Maintained Two Open Source Angular Libraries: - Ngx
-            Lightbox Plus : Created an Angular library that extends the
-            functionality of ngx-lightbox by adding video support, now used by
-            developers globally. - Special Characters Picker : facilitate the
-            insertion of special characters in web applications, contributing to
-            the open-source community. [check personal projects for details].
-          </li>
+          <li>Authored and Maintained Two Open Source Angular Libraries.</li>
           <li>
             Guaranteeing cross- browser functionality and adherence to web
             content accessibility standards.
           </li>
-          <li>
+          <!-- <li>
             Creating sitemaps and implementing SEO best practices to enhance
             website visibility and search engine ranking.
-          </li>
-          <li>
-            Utilized Scully for static site generation in Angular applications,
-            significantly improving SEO performance and reducing load times.
-          </li>
-          <li>
+          </li> -->
+          <li>Utilized Scully for static site generation.</li>
+          <!-- <li>
             Mentored junior developers, promoting best practices in code
             quality, documentation, and workflow management.
-          </li>
+          </li> -->
         </ul>
       </section>
 
       <!--Projects-->
       <section>
-        <h2 class="header">Projects</h2>
+        <div class="header">Projects</div>
+        <div class="d-flex">
+          <div class="col-6">
+            <ul>
+              <h3 class="title">Work Projects</h3>
 
-        <h3 class="title">Work Projects</h3>
-        <ul>
-          <li class="">
-            <strong>Bitoasis</strong>
-            <p>
-              A platform that allows you to securely buy, sell and trade
-              cryptocurrencies.
-            </p>
-            <div class="">
-              <a href="https://bitoasis.net/en/home">
-                🔗 https://bitoasis.net/en/home</a
-              >
-            </div>
-          </li>
-          <!-- <ul>
+              <li class="">
+                <strong>Bitoasis</strong>
+
+                <div class="">
+                  <a href="https://bitoasis.net/en/home">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://bitoasis.net/en/home</a
+                  >
+                </div>
+              </li>
+              <!-- <ul>
             <li>
               Website Link:
               <a href="https://bitoasis.net/en/home"
@@ -1975,178 +1954,304 @@ z"
             </li>
           </ul> -->
 
-          <li>
-            <strong>CMS (Content Management system)</strong>
+              <li>
+                <strong>CMS (Content Management system)</strong>
 
-            <p>These projects built using our Angular team's CMS:</p>
-            <div>
-              <a href="https://rosarycsh.edu.jo/"
-                >🔗 https://rosarycsh.edu.jo/</a
-              >
-            </div>
-            <div>
-              <a href="https://solidarity.com.jo/en/home"
-                >🔗 https://solidarity.com.jo/en/home</a
-              >
-            </div>
-            <div>
-              <a href="https://eskadenia.com/">🔗 https://eskadenia.com/</a>
-            </div>
+                <div>
+                  <a href="https://rosarycsh.edu.jo/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://rosarycsh.edu.jo/</a
+                  >
+                </div>
+                <div>
+                  <a href="https://solidarity.com.jo/en/home">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://solidarity.com.jo/en/home</a
+                  >
+                </div>
+                <div>
+                  <a href="https://eskadenia.com/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://eskadenia.com/</a
+                  >
+                </div>
 
-            <div>
-              <a href="https://runjordan.com/">🔗 https://runjordan.com/</a>
-            </div>
+                <div>
+                  <a href="https://runjordan.com/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://runjordan.com/</a
+                  >
+                </div>
 
-            <div>
-              <a href="https://www.amsa.com.jo/">🔗 https://www.amsa.com.jo/</a>
-            </div>
-          </li>
-          <li>
-            <strong>Revenue Compliance and Verification System</strong>
+                <div>
+                  <a href="https://www.amsa.com.jo/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://www.amsa.com.jo/</a
+                  >
+                </div>
+              </li>
+              <li>
+                <strong>Revenue Compliance and Verification System</strong>
+                <div>
+                  <a href="https://cmc.iq/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    Communications and Media Commission, Iraq government</a
+                  >
+                </div>
+              </li>
+              <li>
+                <strong> Online education platform</strong>
 
-            <p>
-              This system dynamically calculates the governmental fees owed
-              based on declared revenues and cross-verifies these against
-              submissions in a secure portal.
-            </p>
+                <div>
+                  <a href="https://anardes.net/new/indexenglish.php">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://anardes.net/new/indexenglish.php</a
+                  >
+                </div>
+              </li>
+              <li>
+                <strong>Sallatiy - Ecommerce website</strong>
+                <div>
+                  <a href="http://sallatiy.com/" style="display: inline-block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    <nobr>http://sallatiy.com/</nobr>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-            <div>
-              <a href="https://cmc.iq/"
-                >🔗 Communications and Media Commission, Iraq government</a
-              >
-            </div>
-          </li>
-          <li>
-            <strong> Online education platform</strong>
+          <div class="col-6">
+            <ul>
+              <h3 class="title">Personal Projects</h3>
 
-            <div>
-              <a href="https://anardes.net/new/indexenglish.php"
-                >🔗 https://anardes.net/new/indexenglish.php</a
-              >
-            </div>
-          </li>
-        </ul>
-        <br />
-        <h3 class="title">Personal Projects</h3>
-
-        <ul>
-          <li>
-            <strong> Ngx Lightbox Plus(NPM Package) </strong>
-            <p>
+              <li>
+                <strong> Ngx Lightbox Plus(NPM Package) </strong>
+                <!-- <p>
               All the features of the original ngx-lightbox Package and Added
               video support.
-            </p>
-            <div>
-              NPM Link:
-              <a href="https://www.npmjs.com/package/ngx-lightbox-plus">
-                🔗 https://www.npmjs.com/package/ngx-lightbox-plus</a
-              >
-            </div>
-            <div>
-              Source Code Link:
-              <a href="https://github.com/ssondoss/ngx-lightbox-plus">
-                🔗 https://github.com/ssondoss/ngx-lightbox-plus</a
-              >
-            </div>
-          </li>
-
-          <li>
-            <strong> Author of Special Characters Picker(NPM Package) </strong>
-            <p>
-              Picker for easy insertion and search of special characters,
-              Developed and intend to integrate into my advanced text editor
-            </p>
-            <div>
-              NPM Link:
-              <a href="https://www.npmjs.com/package/special-characters-picker">
-                🔗 https://www.npmjs.com/package/special-characters-picker</a
-              >
-            </div>
-            <div>
-              Source Code Link:
-              <a href="https://github.com/ssondoss/specail-characters-picker">
-                🔗 https://github.com/ssondoss/specail-characters-picker</a
-              >
-            </div>
-          </li>
-
-          <li>
-            <strong>High Designing Skills(Talabat design)</strong>
-            <div>
-              Live Demo Link:
-              <a href="https://amazing-clarke-3f5343.netlify.app">
-                <svg
-                  id="Layer_1"
-                  data-name="Layer 1"
-                  height="13px"
-                  fill="#807f7f"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 122.88 122.88"
-                >
-                  <title>hyperlink</title>
-                  <path
-                    d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
-                  />
-                </svg>
-
-                https://amazing-clarke-3f5343.netlify.app</a
-              >
-            </div>
-          </li>
-
-          <li>
-            <strong>Sallatiy - Ecommerce website</strong>
-            <div>
-              <a href="http://sallatiy.com/" style="display: inline-block">
-                <span
-                  style="
-                    display: inline-block;
-                    vertical-align: middle;
-                    line-height: 1;
-                  "
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 122.88 122.88"
-                    width="12"
-                    height="12"
-                    fill="#807f7f"
-                    style="
-                      display: inline-block;
-                      vertical-align: middle;
-                      margin-right: 4px;
-                    "
+            </p> -->
+                <div>
+                  NPM Link:
+                  <a href="https://www.npmjs.com/package/ngx-lightbox-plus">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://www.npmjs.com/package/ngx-lightbox-plus</a
                   >
-                    <path
-                      d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
-                    />
-                  </svg>
-                  <nobr>http://sallatiy.com/</nobr>
-                </span>
-              </a>
+                </div>
+                <div>
+                  Source Code Link:
+                  <a href="https://github.com/ssondoss/ngx-lightbox-plus">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://github.com/ssondoss/ngx-lightbox-plus</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <strong>
+                  Author of Special Characters Picker(NPM Package)
+                </strong>
+
+                <div>
+                  NPM Link:
+                  <a
+                    href="https://www.npmjs.com/package/special-characters-picker"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://www.npmjs.com/package/special-characters-picker</a
+                  >
+                </div>
+                <div>
+                  Source Code Link:
+                  <a
+                    href="https://github.com/ssondoss/specail-characters-picker"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+                    https://github.com/ssondoss/specail-characters-picker</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <strong>High Designing Skills(Talabat design)</strong>
+                <div>
+                  Live Demo Link:
+                  <a href="https://amazing-clarke-3f5343.netlify.app">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 122.88 122.88"
+                      width="12"
+                      height="12"
+                      fill="#9f9e9e"
+                      style="display: inline-block"
+                    >
+                      <path
+                        d="M60.54,34.07A7.65,7.65,0,0,1,49.72,23.25l13-12.95a35.38,35.38,0,0,1,49.91,0l.07.08a35.37,35.37,0,0,1-.07,49.83l-13,12.95A7.65,7.65,0,0,1,88.81,62.34l13-13a20.08,20.08,0,0,0,0-28.23l-.11-.11a20.08,20.08,0,0,0-28.2.07l-12.95,13Zm14,3.16A7.65,7.65,0,0,1,85.31,48.05L48.05,85.31A7.65,7.65,0,0,1,37.23,74.5L74.5,37.23ZM62.1,89.05A7.65,7.65,0,0,1,72.91,99.87l-12.7,12.71a35.37,35.37,0,0,1-49.76.14l-.28-.27a35.38,35.38,0,0,1,.13-49.78L23,50A7.65,7.65,0,1,1,33.83,60.78L21.12,73.49a20.09,20.09,0,0,0,0,28.25l0,0a20.07,20.07,0,0,0,28.27,0L62.1,89.05Z"
+                      />
+                    </svg>
+
+                    https://amazing-clarke-3f5343.netlify.app</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Education & Languages-->
+      <section>
+        <div class="d-flex">
+          <div class="col-6 ">
+            <div class="header">Education</div>
+            <div class="pt-10"><b>Software Engineering</b> - Bachelor's Degree</div>
+            <div class="">2017 - 2021</div>
+            <div class="">Excellent, Graduated with second rank</div>
+
+            <div class="pt-10"><b>Nursing</b> - Bachelor's Degree</div>
+            <div class="">2012 - 2016</div>
+            <div class="">Excellent</div>
+          </div>
+          <div class="col-6 pl-80">
+            <div class="header">Languages</div>
+
+            <div class="pt-10"> <strong>Arabic</strong>: Native or Bilingual Proficiency
+            <p><strong>English</strong>: Full Professional Proficiency</p>
             </div>
-          </li>
-        </ul>
-      </section>
-
-      <!--Education-->
-      <section>
-        <h2 class="header">Education</h2>
-        <div class=""><b>Software Engineering</b> - Bachelor's Degree</div>
-        <div class="">2017 - 2021</div>
-        <div class="">Excellent, Graduated with second rank</div>
-
-        <br />
-        <div class="pt-20"><b>Nursing</b> - Bachelor's Degree</div>
-        <div class="">2012 - 2016</div>
-        <div class="">Excellent</div>
-      </section>
-      <!--Languages-->
-      <section>
-        <h2 class="header">Languages</h2>
-
-        <strong>Arabic</strong>: Native or Bilingual Proficiency
-        <p><strong>English</strong>: Full Professional Proficiency</p>
+          </div>
+        </div>
       </section>
     </div>
   </body>
