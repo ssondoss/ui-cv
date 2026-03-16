@@ -164,6 +164,24 @@
         page-break-inside: avoid;
       }
 
+      .experience-section .entry {
+        page-break-inside: auto;
+        break-inside: auto;
+        padding-top: 10px;
+      }
+
+      .experience-section .entry-head,
+      .experience-section .row,
+      .experience-section .entry-sub {
+        page-break-after: avoid;
+        break-after: avoid-page;
+      }
+
+      .experience-section li {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
       .entry:first-child {
         margin-top: 0;
       }
@@ -288,66 +306,67 @@
         <p><strong>Backend:</strong> Java 8+, Spring Boot, Spring Batch, Spring Data JPA/Hibernate, Scheduler Jobs, REST APIs, GraphQL, JWT, RSA, SHA256, MySQL.</p>
         <p><strong>Cloud:</strong> AWS Cloud Practitioner (in progress), with solid understanding of IAM, EC2, S3, VPC, CloudWatch, and core cloud concepts.</p>
         <p><strong>Engineering:</strong> OOP, Functional Programming, Design Patterns, System Design, SQL Optimization, Caching, Unit Testing, Agile/Scrum.</p>
-        <div class="chips">
+        <!-- <div class="chips">
           <span class="chip">Angular Architecture</span>
           <span class="chip">Spring Boot Services</span>
           <span class="chip">GraphQL + REST</span>
           <span class="chip">Security Patterns</span>
           <span class="chip">Performance Tuning</span>
           <span class="chip">AWS Cloud Practitioner</span>
-        </div>
+        </div> -->
       </section>
 
-      <section class="section">
+      <section class="section experience-section">
         <h2 class="section-title">Professional Experience</h2>
 
         <article class="entry">
-          <div class="entry-head">Software Engineer (Angular + Spring Boot) - Bitoasis</div>
+          <div class="entry-head">Software Engineer (Angular + Spring Boot) - BitOasis</div>
           <div class="row muted">
             <div class="col half">Sep 2024 - Present</div>
-            <div class="col half">Amman, Jordan</div>
+            <div class="col half">Amman, Jordan (Hybrid)</div>
           </div>
           <div class="entry-sub">Cryptocurrency exchange platform for Bitcoin and 60+ cryptocurrencies.</div>
           <ul>
-            <li>Designed and implemented modular Angular component architecture to improve reusability and scalability.</li>
-            <li>Developed and maintained GraphQL integrations between frontend and backend services.</li>
-            <li>Integrated Voucherify to support loyalty, promotions, and reward campaigns.</li>
-            <li>Built a service-monitoring tool with automated Slack alerts for internal health checks.</li>
-            <li>Created localization automation for large XLF files, reducing merge conflicts across teams.</li>
-            <li>Improved SEO metadata handling and web performance behavior.</li>
+            <li>Designed a modular Angular component architecture across trading, account, and platform modules to improve UI reuse and maintainability.</li>
+            <li>Integrated GraphQL APIs in Angular apps for efficient trading and account data handling.</li>
+            <li>Improved frontend SEO and metadata management for better discoverability and page performance.</li>
+            <li>Enhanced frontend performance through component optimization, lazy loading, and Angular best practices.</li>
+            <li>Built an Electron + Angular desktop app to extend trading workflows with OS-level notifications.</li>
+            <li>Supported product growth with FE integrations including Voucherify campaigns, XLF localization automation, and service monitoring alerts.</li>
           </ul>
         </article>
 
         <article class="entry">
-          <div class="entry-head">Founding Software Engineer (Parallel Role)</div>
-          <div class="row muted">
-            <div class="col half">2020 - Present</div>
-            <div class="col half">Amman, Jordan</div>
-          </div>
-          <div class="entry-sub">Parallel contribution to a product ecosystem covering POS, warehouse, and e-commerce domains.</div>
-          <ul>
-            <li>Contributed to backend and frontend architecture design for business-critical modules.</li>
-            <li>Implemented core services and UI features using Angular and Spring Boot.</li>
-            <li>Supported iterative product delivery with cross-team collaboration and rapid feature rollout.</li>
-          </ul>
-        </article>
-
-        <article class="entry">
-          <div class="entry-head">Software Engineer (Angular + Spring Boot) - Eskadenia</div>
+          <div class="entry-head">Software Engineer (Angular + Spring Boot) - ESKADENIA Software</div>
           <div class="row muted">
             <div class="col half">Dec 2021 - Sep 2024</div>
-            <div class="col half">Amman, Jordan</div>
+            <div class="col half">Amman, Jordan (On-Site)</div>
           </div>
-          <div class="entry-sub">Software development company delivering solutions across enterprise and public sectors.</div>
+          <div class="entry-sub">Built secure, scalable enterprise solutions across backend services and Angular platforms.</div>
           <ul>
-            <li>Designed and developed RESTful APIs.</li>
-            <li>Engineered a scheduler to automate data retrieval tasks from external APIs.</li>
-            <li>Collaborated with JPA/Hibernate to implement code-first database models.</li>
-            <li>Constructed an end-to-end security layer for encryption/decryption and HTTP request signing.</li>
-            <li>Enhanced a large-scale CMS using dynamic components for flexible content customization.</li>
-            <li>Designed robust state management with NgRx Store.</li>
-            <li>Authored and maintained two open source Angular libraries.</li>
-            <li>Ensured cross-browser compatibility and WCAG-aligned accessibility.</li>
+            <li>Designed and implemented a security layer for end-to-end encryption and signed HTTP requests using RSA and SHA-256.</li>
+            <li>Engineered a Spring Scheduler and Spring Batch data-sync workflow to automate retrieval from external operator APIs.</li>
+            <li>Developed a real-time chat and video module using WebSocket and WebRTC with Spring Boot and Angular for signaling flows.</li>
+            <li>Migrated an Angular CMS to a plugin-based architecture using Ivy and AOT, replacing legacy JIT/View Engine patterns.</li>
+            <li>Implemented monitoring and operational metrics with Spring Boot Actuator to improve observability and reliability.</li>
+            <li>Applied secure frontend practices to mitigate XSS and CSRF risks across Angular applications.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">Software Engineer (Contract) - Link Business Solutions</div>
+          <div class="row muted">
+            <div class="col half">Jun 2021 - Present</div>
+            <div class="col half">Amman, Jordan (Remote)</div>
+          </div>
+          <div class="entry-sub">Delivered POS, warehouse, and e-commerce capabilities for business operations.</div>
+          <ul>
+            <li>Developed Java and Spring Boot backend services for POS workflows including order processing, factory operations, and branch management.</li>
+            <li>Integrated payment systems including wallets, loyalty and gift cards, and MEPS card processing with redemption, balance checks, and secure transaction flows.</li>
+            <li>Implemented offline POS support with SQLite local persistence and data synchronization after connectivity is restored.</li>
+            <li>Built database migration scripts to move legacy data into updated relational schemas during system revamps.</li>
+            <li>Implemented OTP authentication and notification services, and delivered reporting modules for operational analytics.</li>
+            <li>Improved platform performance with Angular SSR on Cloudflare and a Python image-optimization pipeline.</li>
           </ul>
         </article>
       </section>
@@ -359,7 +378,7 @@
             <div class="project-group">
               <h3>Collaborative Projects</h3>
               <ul class="project-list">
-                <li><strong>Bitoasis:</strong> <a href="https://bitoasis.net/en/home">bitoasis.net/en/home</a></li>
+                <li><strong>BitOasis:</strong> <a href="https://bitoasis.net/en/home">bitoasis.net/en/home</a></li>
                 <li><strong>CMS Website Suite:</strong> <a href="https://rosarycsh.edu.jo/">rosarycsh.edu.jo</a>, <a href="https://solidarity.com.jo/en/home">solidarity.com.jo</a>, <a href="https://eskadenia.com/">eskadenia.com</a>, <a href="https://runjordan.com/">runjordan.com</a>, <a href="https://www.amsa.com.jo/">amsa.com.jo</a></li>
                 <li><strong>Linkco Official Platform:</strong> <a href="https://linkco.jo/ar">linkco.jo/ar</a></li>
                 <li><strong>Planet Donuts Platform:</strong> <a href="https://planetdonuts.com">planetdonuts.com</a></li>
